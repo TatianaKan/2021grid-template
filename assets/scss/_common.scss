@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+  font-family: $font-main;
+  overflow-y: scroll;
+}
+
+a {
+  color: $color-light;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: 300;
+  font-size: 3.75rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  line-height: 1.2em;
+
+  // @media (min-width: $lg) {
+  //   font-size: 3.75rem;
+  // }
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+
+  @include md {
+    font-size: 1.87rem;
+  }
+}
+
+h2 {
+
+  letter-spacing: 0.1em;
+  font-family: $font-header;
+  color: $color-primary;
+  line-height: 1.2em;
+
+  @include lg-min {
+    margin-bottom: 56px;
+    font-size: 2.5rem;
+
+  }
+    @include lg-md {
+      margin-bottom: 42px;
+      font-size: 2rem;
+    }
+
+    @include md-sm {
+          margin-bottom: 36px;
+          font-size: 1.5rem;
+      }
+
+      @include sm {
+            margin-bottom: 36px;
+            text-align: center;
+            // font-size: 1.5rem;
+        }
+}
+
+p {
+  color: $color-gray;
+  
+}
+
+
+// hr {
+
+//   margin: 200px 0 0 0;
+//   height: 200px;
+//   width: 1px;
+// }
+
+.btn {
+  display: block;
+
+  letter-spacing: 0.1em;
+
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.btn--light {
+  background-color: rgba($color-light, 0.1);
+  border: 2px solid $color-light;
+
+  @include lg-min {
+    font-size: 1.125rem;
+    min-width: 250px;
+    height: 60px;
+    padding: 18px $gap;
+  }
+
+  @include lg-md {
+    min-width: 200px;
+    height: 50px;
+    padding: 14px $gap;
+  }
+
+  @include md {
+    min-width: 170px;
+    height: 40px;
+    padding: 9px $gap;
+  }
+}
+.btn--light:hover,
+.btn--primary:hover {
+  background-color: $color-accent;
+}
+.btn--primary {
+  font-size: 1.125rem;
+  height: 60px;
+  padding: 18px $gap;
+  background-color: rgba($color-primary, 0.8);
+  border: 2px solid $color-primary;
+
+
+
+
+
+  @include sm-min {
+    min-width: 350px;
+  }
+
+  @include sm {
+    min-width: 100%;
+  }
+}
