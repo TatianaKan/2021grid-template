@@ -1,17 +1,63 @@
 .form {
- padding: 30px 0;
-background-color: $color-primary;
+  padding: 30px 0;
+  background-color: $color-primary;
 
-
-&-container {
-display: grid;
-gap: $gap;
+  &__container {
+    display: grid;
+    gap: $gap;
 
     @extend %container;
 
 
-}
+    @include md-min {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
+  &-item {
+      &:nth-of-type(1) {
+          @include md-sm {
+              grid-column: 1/ span 2;
+          }
+      }
+    &__input {
+      display: block;
+      height: $gap * 3;
+      width: 100%;
+      padding-right: $gap / 2 * 3;
+      padding-left: $gap / 2 * 3;
 
+      font-size: 1.125rem;
+      letter-spacing: 0.15em;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid rgba(255, 255, 255, 0);
+
+      &::placeholder {
+        color: $color-gray;
+      }
+      &:hover,
+      &:focus {
+        border-color: rgba(255, 255, 255, 0.15);
+        border-bottom-color: $color-light;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+  .btn--primary {
+      width: 100%;
+      color: $color-light;
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+
+      &:focus,
+      &:hover {
+          border-color: $color-light;
+          background-color: $color-accent;
+      }
+  }
 }
