@@ -512,10 +512,6 @@ p {
   color: #637588;
 }
 
-.lg {
-  font-family: "Font Awesome";
-}
-
 .btn {
   display: block;
   letter-spacing: 0.1em;
@@ -851,6 +847,7 @@ p {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-top: -50px;
 }
 
 .about-container__image img {
