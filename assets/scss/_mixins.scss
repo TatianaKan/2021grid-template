@@ -1,18 +1,17 @@
-@mixin  unlist($m: 0, $p: 0) {
-    list-style: none;
-            margin: $m;
-            padding: $p;
+@mixin unlist($m: 0, $p: 0) {
+  list-style: none;
+  margin: $m;
+  padding: $p;
 }
 
-@mixin abs-pozition ($t: 0, $r: 0, $b: 0, $l: 0) {
-    position: absolute;
-    top:$t;
-    right: $r;
-    bottom: $b;
-    left: $l;
+@mixin abs-pozition($t: 0, $r: 0, $b: 0, $l: 0) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
 }
 
-@mixin  box-shadow {
-    box-shadow: -1px 3px $gap $color-gray-dark ;
-    
+@mixin box-shadow {
+  box-shadow: -1px 3px $gap $color-gray-dark;
 }

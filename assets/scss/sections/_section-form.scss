@@ -8,7 +8,6 @@
 
     @extend %container;
 
-
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -19,11 +18,11 @@
   }
 
   &-item {
-      &:nth-of-type(1) {
-          @include md-sm {
-              grid-column: 1/ span 2;
-          }
+    &:nth-of-type(1) {
+      @include md-sm {
+        grid-column: 1 / span 2;
       }
+    }
     &__input {
       display: block;
       height: $gap * 3;
@@ -48,16 +47,16 @@
     }
   }
   .btn--primary {
-      width: 100%;
-      color: $color-light;
-      border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: rgba(255, 255, 255, 0.2);
-      background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    color: $color-light;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
 
-      &:focus,
-      &:hover {
-          border-color: $color-light;
-          background-color: $color-accent;
-      }
+    &:focus,
+    &:hover {
+      border-color: $color-light;
+      background-color: $color-accent;
+    }
   }
 }

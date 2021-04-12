@@ -3,8 +3,6 @@
   position: relative;
   overflow: hidden;
 
-
-
   &__overlay {
     background-color: #2d3651;
     opacity: 0.8;
@@ -31,7 +29,6 @@
     transition: color 0.5s;
 
     @include abs-pozition;
-    
   }
 
   &:hover {

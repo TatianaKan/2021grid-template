@@ -1,45 +1,39 @@
 .header-content {
-    position: relative;
-   
-    &__actions {
-      display: flex;
-      justify-content: center;
+  position: relative;
 
-      @include sm {
-        flex-direction: column;
-        align-items: center;
-      }
-       }
+  &__actions {
+    display: flex;
+    justify-content: center;
 
-    &__actions .btn:first-of-type {
-      @include sm-min {
-        margin-right: $gap;
-      }
-
-      @include sm {
-        margin-bottom: $gap;
-      }
-
+    @include sm {
+      flex-direction: column;
+      align-items: center;
     }
-      
-    &__title {
-      @include lg-min {
-        margin: 0  0  53px 0;
-      }
-      @include lg-md {
-        margin: 0  0  43px 0;
-      }
-      @include md {
-        margin: 0  0  33px 0;
-      }
+  }
 
-
-      }
-
-    &__container {
-
-        @extend %container;
-        
-        }
-
+  &__actions .btn:first-of-type {
+    @include sm-min {
+      margin-right: $gap;
     }
+
+    @include sm {
+      margin-bottom: $gap;
+    }
+  }
+
+  &__title {
+    @include lg-min {
+      margin: 0 0 53px 0;
+    }
+    @include lg-md {
+      margin: 0 0 43px 0;
+    }
+    @include md {
+      margin: 0 0 33px 0;
+    }
+  }
+
+  &__container {
+    @extend %container;
+  }
+}
