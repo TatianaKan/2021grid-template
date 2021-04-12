@@ -512,6 +512,10 @@ p {
   color: #637588;
 }
 
+.lg {
+  font-family: "Font Awesome";
+}
+
 .btn {
   display: block;
   letter-spacing: 0.1em;
@@ -1032,8 +1036,46 @@ p {
 
 .footer {
   text-align: center;
-  padding: 50px;
+  padding: 50px 20px 70px 0;
   background-color: #2d3651;
+}
+
+.footer__social {
+  position: relative;
+  display: grid;
+  margin-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+}
+
+.footer__social a {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 33px;
+  height: 33px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 10px 20px 0;
+  padding: 6px;
+  color: #2d3651;
+}
+
+.footer__social a:hover {
+  background-color: #d66926;
+}
+
+.footer__social::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 75px;
+  height: 2px;
+  left: calc(50% - 75px / 2);
+  bottom: -10px;
 }
 
 .footer__content span {
@@ -1044,6 +1086,7 @@ p {
   font-weight: 1;
   letter-spacing: 0.33em;
   margin-right: -10px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer__content span:nth-of-type(2) {
