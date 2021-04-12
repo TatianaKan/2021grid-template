@@ -1,0 +1,29 @@
+.footer {
+text-align: center;
+padding: 50px;
+background-color: $color-primary;
+
+
+
+&__social {
+
+}
+
+&__content {
+    span {
+        color: $color-gray-light;
+        &:nth-of-type(1) {
+            font-weight: 1;
+            letter-spacing: 0.33em;
+            margin-right: -10px;
+        }
+
+        &:nth-of-type(2) {
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            
+        }
+        
+    }
+}
+}
