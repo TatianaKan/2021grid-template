@@ -89,7 +89,9 @@ input:focus {
   display: block;
 
   letter-spacing: 0.1em;
-
+  font-size: 1.125rem;
+  height: 60px;
+  padding: 18px $gap;
   text-align: center;
   transition: background-color 0.5s;
 }
@@ -104,33 +106,31 @@ input:focus {
     height: 60px;
     padding: 18px $gap;
   }
-
+  
   @include lg-md {
     min-width: 200px;
     height: 50px;
     padding: 14px $gap;
   }
-
+  
   @include md {
     min-width: 170px;
     height: 40px;
     padding: 9px $gap;
   }
 }
-.btn--light:hover,
-.btn--primary:hover {
+.btn:hover,
+.btn:hover {
   background-color: $color-accent;
 }
 .btn--primary {
-  font-size: 1.125rem;
-  height: 60px;
-  padding: 18px $gap;
+  
   background-color: rgba($color-primary, 0.8);
   border: 2px solid $color-primary;
 
-  @include sm-min {
-    min-width: 350px;
-  }
+  // @include sm-min {
+  //   min-width: 350px;
+  // }
 
   @include sm {
     min-width: 100%;

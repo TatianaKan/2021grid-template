@@ -519,6 +519,9 @@ input:focus {
 .btn {
   display: block;
   letter-spacing: 0.1em;
+  font-size: 1.125rem;
+  height: 60px;
+  padding: 18px 20px;
   text-align: center;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -530,15 +533,12 @@ input:focus {
   border: 2px solid #ffffff;
 }
 
-.btn--light:hover,
-.btn--primary:hover {
+.btn:hover,
+.btn:hover {
   background-color: #d66926;
 }
 
 .btn--primary {
-  font-size: 1.125rem;
-  height: 60px;
-  padding: 18px 20px;
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #2d3651;
 }
@@ -1119,15 +1119,18 @@ input:focus {
 }
 
 @media (min-width: 576px) {
-  .btn--primary {
-    min-width: 350px;
-  }
   .header-content__actions .btn:first-of-type {
     margin-right: 20px;
   }
   .skills {
     margin-bottom: 30px;
     padding: 10px;
+  }
+  .skills__actions .btn--primary {
+    min-width: 350px;
+  }
+  .post__actions .btn--primary {
+    min-width: 350px;
   }
 }
 
