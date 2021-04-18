@@ -1075,17 +1075,13 @@ input:focus {
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 
+.footer__social .fab {
+  font-size: 36px;
+}
+
 .footer__social a {
   display: block;
-  text-align: center;
-  font-size: 1.3rem;
-  width: 33px;
-  height: 33px;
-  background: #fff;
-  border-radius: 6px;
-  margin: 0 10px 20px 0;
-  padding: 6px;
-  color: #2d3651;
+  padding: 10px;
 }
 
 .footer__social a:hover {
@@ -1099,7 +1095,7 @@ input:focus {
   width: 75px;
   height: 2px;
   left: calc(50% - 75px / 2);
-  bottom: -10px;
+  bottom: -20px;
 }
 
 .footer__content span {

@@ -9,20 +9,14 @@
     margin-bottom: $gap * 2;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    
+    .fab {
+      font-size: 36px;
+    }
+    
     a {
       display: block;
-      text-align: center;
-      font-size: 1.3rem;
-      width: 33px;
-      height: 33px;
-      //   float: left;
-      background: #fff;
-      // border: 1px solid #ccc;
-      // box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-      border-radius: 6px;
-      margin: 0 10px $gap 0;
-      padding: 6px;
-      color: $color-primary;
+      padding: 10px;
       &:hover {
         background-color: $color-accent;
       }
@@ -35,7 +29,7 @@
       width: 75px;
       height: 2px;
       left: calc(50% - 75px / 2);
-      bottom: -10px;
+      bottom: -20px;
     }
   }
 
