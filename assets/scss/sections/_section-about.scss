@@ -50,38 +50,38 @@
         &:first-of-type {
           position: relative;
           margin-top: -$gap/4;
-            &::after {
-              top: 0;
-              position: absolute;
-              content: "";
-              background-color: rgba(#637588, 0.1);
-              width: 2px;
-              height: 200px;
+          &::after {
+            top: 0;
+            position: absolute;
+            content: "";
+            background-color: rgba(#637588, 0.1);
+            width: 2px;
+            height: 200px;
 
-               @include lg-min {
-                 right: -50px;
-               }
-
-               @include lg-md {
-                 right: -$gap;
-               }
-
-               @include md-sm {
-                 right: -$gap/2;
-               }
-
-               @include sm {
-                 display: none;
-               }
-
-              // right: calc(32% - 2px / 2);
+            @include lg-min {
+              right: -50px;
             }
+
+            @include lg-md {
+              right: -$gap;
+            }
+
+            @include md-sm {
+              right: -$gap/2;
+            }
+
+            @include sm {
+              display: none;
+            }
+
+            // right: calc(32% - 2px / 2);
           }
         }
+      }
 
-        &:last-of-type {
-          margin: 0;
-        }
+      &:last-of-type {
+        margin: 0;
+      }
       @include lg-min {
         & p {
           font-size: 1.125rem;
