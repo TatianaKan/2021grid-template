@@ -1131,8 +1131,8 @@ input:focus {
 }
 
 @media (min-height: 691px) {
-  .skills {
-    grid-auto-rows: calc(33.33vh - 13.33px);
+  .skills__container {
+    grid-auto-rows: calc(33.3333vh - 13.33px);
   }
 }
 
@@ -1176,6 +1176,7 @@ input:focus {
   .skills__container {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
   }
   .about {
     padding-top: 100px;
@@ -1217,6 +1218,7 @@ input:focus {
   .skills__container {
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
   }
   .about {
     padding-top: 80px;
@@ -1292,6 +1294,7 @@ input:focus {
   .skills__container {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
   .about-container {
     grid-template-columns: 1fr 236px;
@@ -1310,7 +1313,7 @@ input:focus {
 }
 
 @media (max-height: 690px) {
-  .skills {
+  .skills__container {
     grid-auto-rows: calc(230px - 13.33px);
   }
 }
@@ -1341,6 +1344,7 @@ input:focus {
   .skills__container {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     gap: 20px;
+    grid-template-columns: 1fr;
   }
   .about-container {
     grid-template-columns: 1fr;
