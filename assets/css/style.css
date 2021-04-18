@@ -1085,7 +1085,7 @@ input:focus {
 }
 
 .footer__social a:hover {
-  background-color: #d66926;
+  color: #d66926;
 }
 
 .footer__social::after {
