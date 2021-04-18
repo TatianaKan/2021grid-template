@@ -33,6 +33,7 @@
       font-size: 1.125rem;
       letter-spacing: 0.15em;
       background-color: rgba(255, 255, 255, 0.05);
+      transition: background-color 0.5s, border-color 0.5s;
       border: 2px solid rgba(255, 255, 255, 0);
 
       &::placeholder {
@@ -43,6 +44,9 @@
         border-color: rgba(255, 255, 255, 0.15);
         border-bottom-color: $color-light;
         background-color: rgba(255, 255, 255, 0.15);
+      &::placeholder {
+        color: #8c9bab;
+      }
       }
     }
   }

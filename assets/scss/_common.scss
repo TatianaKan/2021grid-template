@@ -82,6 +82,9 @@ p {
 //   width: 1px;
 // }
 
+input:focus {
+  outline: none;
+}
 .btn {
   display: block;
 
