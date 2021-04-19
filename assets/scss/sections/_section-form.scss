@@ -29,7 +29,7 @@
       width: 100%;
       padding-right: $gap / 2 * 3;
       padding-left: $gap / 2 * 3;
-
+      color: white;
       font-size: 1.125rem;
       letter-spacing: 0.15em;
       background-color: rgba(255, 255, 255, 0.05);
@@ -44,9 +44,9 @@
         border-color: rgba(255, 255, 255, 0.15);
         border-bottom-color: $color-light;
         background-color: rgba(255, 255, 255, 0.15);
-      &::placeholder {
-        color: #8c9bab;
-      }
+        &::placeholder {
+          color: #8c9bab;
+        }
       }
     }
   }
